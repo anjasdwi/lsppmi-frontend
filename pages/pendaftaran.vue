@@ -138,6 +138,7 @@ import { RepositoryFactory } from "./../repositories/RepositoryFactory"
 const PostsRepository = RepositoryFactory.get("account")
 
 export default {
+  middleware: "public",
   components: { BeatLoader, BodyDefault },
   data() {
     return {

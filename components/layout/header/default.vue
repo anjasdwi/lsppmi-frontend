@@ -78,7 +78,7 @@
             <div class="top_bar_right">
               <div class="top_bar_right_wrapper">
                 <nuxt-link class="action_button" to="/login">
-                  Login
+                  {{ token ? "Akun Saya" : "Login" }}
                 </nuxt-link>
               </div>
             </div>
@@ -94,7 +94,8 @@ export default {
   name: "HeaderDefault",
   data() {
     return {
-      logo: `${process.env.storage}/logo.png`
+      logo: `${process.env.storage}/logo.png`,
+      token: this.$cookies.get("lsppmi--token")
     }
   },
   methods: {

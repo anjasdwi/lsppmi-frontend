@@ -11,7 +11,7 @@
         to="/pendaftaran"
         @click="onClickLogin()"
       >
-        Login
+        {{ token ? "Akun Saya" : "Login" }}
       </nuxt-link>
       <div class="extras-wrapper" />
     </div>
@@ -24,7 +24,8 @@ export default {
   name: "HeaderDefaultMobile",
   data() {
     return {
-      logo: `${process.env.storage}/logo.png`
+      logo: `${process.env.storage}/logo.png`,
+      token: this.$cookies.get("lsppmi--token")
     }
   },
   methods: {

@@ -5,7 +5,7 @@
         <nuxt-link class="login_logo" to="/">
           <img alt="Logo" :src="logo" />
         </nuxt-link>
-        <a-form :form="form" class="form_card" @submit="handleSubmit">
+        <a-form :form="form" class="form_card" @submit="onSubmit">
           <h2 class="text_orange" style="margin-bottom:0;">
             Masuk
             <nuxt-link
@@ -62,6 +62,7 @@
               html-type="submit"
             >
               Masuk
+              <beat-loader :loading="isSubmit" color="#fff" size="8px" />
             </a-button>
           </a-form-item>
           <p class="text_middle"><span>lupa password?</span></p>
@@ -81,32 +82,55 @@
 </template>
 
 <script>
+import BeatLoader from "vue-spinner/src/BeatLoader.vue"
 // #NOTE: Import Layout
 import BodyDefault from "~/components/layout/body/default"
+// #NOTE: Import Repository
+import { RepositoryFactory } from "./../repositories/RepositoryFactory"
+const PostsRepository = RepositoryFactory.get("account")
+
 export default {
-  components: { BodyDefault },
+  middleware: "public",
+  components: { BeatLoader, BodyDefault },
   data() {
     return {
       formLayout: "horizontal",
       form: this.$form.createForm(this),
       iconGoogle: `${process.env.storage}/logo/google-sign.png`,
       iconFacebook: `${process.env.storage}/logo/facebook.png`,
+      isSubmit: false,
       logo: `${process.env.storage}/logo.png`
     }
   },
   methods: {
-    handleSubmit(e) {
+    async loginMember(payload) {
+      // #NOTE: Post Data Create Member
+      const response = await PostsRepository.loginMember(payload)
+      const { code, message } = response.data
+      this.isSubmit = false
+
+      // #NOTE: IF Create Member Success
+      if (code === 200) {
+        window.$nuxt.$cookies.set("lsppmi--token", response.data.token, {
+          path: "/",
+          maxAge: 60 * 60 * 24 * 1 // 1Day
+        })
+        this.$store.commit("account/setToken", response.data.token)
+        this.$router.push("/member")
+      } else {
+        this.$notification.open({
+          description: message,
+          message: "Login Gagal"
+        })
+      }
+    },
+    onSubmit(e) {
       e.preventDefault()
       this.form.validateFields((err, values) => {
         if (!err) {
-          console.log("Received values of form: ", values)
+          this.isSubmit = true
+          this.loginMember(values)
         }
-      })
-    },
-    handleSelectChange(value) {
-      console.log(value)
-      this.form.setFieldsValue({
-        note: `Hi, ${value === "male" ? "man" : "lady"}!`
       })
     }
   },
