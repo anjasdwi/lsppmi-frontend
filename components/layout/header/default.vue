@@ -56,12 +56,12 @@
                       </nuxt-link>
                     </li>
                     <li>
-                      <a href="#" @click="onActiveMenu('about')">
+                      <a href="#" v-on:click="onActiveMenu('about')">
                         <span>Tentang Kami</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#" @click="onActiveMenu('certification')">
+                      <a href="#" v-on:click="onActiveMenu('certification')">
                         <span>Ujian Sertifikasi Kompetensi</span>
                       </a>
                     </li>
@@ -86,22 +86,72 @@
         </div>
       </div>
     </header>
+    <div v-if="showMenu">
+      <Sertifikasi :menus="menu" />
+    </div>
   </div>
 </template>
-
 <script>
+// #NOTE: Import Mega Menu
+import Sertifikasi from "./megamenu"
+
+const menuAbout = [
+  {
+    title: "About",
+    link: "#"
+  },
+  {
+    title: "About",
+    link: "#"
+  },
+  {
+    title: "About",
+    link: "#"
+  },
+  {
+    title: "About",
+    link: "#"
+  }
+]
+
+const menuCertification = [
+  {
+    title: "Sertifikasi",
+    link: "#"
+  },
+  {
+    title: "Sertifikasi",
+    link: "#"
+  }
+]
+
 export default {
   name: "HeaderDefault",
+  components: {
+    Sertifikasi
+  },
   data() {
     return {
       logo: `${process.env.storage}/logo.png`,
+      menu: "",
+      activeMenu: "",
+      showMenu: false,
       token: this.$cookies.get("lsppmi--token")
     }
   },
   methods: {
     onActiveMenu: function(menu) {
+      switch (menu) {
+        case "about":
+          this.menu = menuAbout
+          break
+        case "certification":
+          this.menu = menuCertification
+          break
+      }
+
       this.activeMenu = menu
-      return this.activeMenu
+      this.showMenu = true
     }
   }
 }

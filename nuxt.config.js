@@ -85,12 +85,13 @@ module.exports = {
     "@/assets/css/company2.css",
     "@/assets/css/custom.css",
     "@/assets/css/footer.css",
+    "@/assets/css/menu.css",
     "@/assets/scss/main.scss"
   ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["@/plugins/antd-ui"],
+  plugins: ["@/plugins/antd-ui", { src: "~plugins/vue-carousel", ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */

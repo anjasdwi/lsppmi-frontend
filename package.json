@@ -28,6 +28,7 @@
         "express": "^4.16.4",
         "nuxt": "^2.0.0",
         "nuxt-fontawesome": "^0.4.0",
+        "vue-carousel": "^0.18.0",
         "vue-spinner": "^1.0.3"
     },
     "devDependencies": {

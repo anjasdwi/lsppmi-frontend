@@ -6,46 +6,19 @@
         <div class="content_wrapper clearfix">
           <div class="sections_group">
             <div class="entry-content">
-              <div
-                class="section mcb-section"
-                style="padding-top:250px; padding-bottom:160px; background-color:#002350"
-                data-parallax="3d"
+              <carousel
+                :autoplay="true"
+                :centerMode="true"
+                :mouse-drag="true"
+                :navigationEnabled="true"
+                :loop="true"
+                :paginationEnabled="false"
+                :per-page="1"
               >
-                <img
-                  class="mfn-parallax"
-                  src="http://be.beantownthemes.com/html/content/company2/images/home_company2_sectionbg1.jpg"
-                  style="opacity:0"
-                />
-                <div class="section_wrapper mcb-section-inner">
-                  <div class="wrap mcb-wrap one valign-top clearfix">
-                    <div class="mcb-wrap-inner">
-                      <div class="column mcb-column one-second column_column">
-                        <div
-                          class="column_attr clearfix"
-                          style="padding:0 0 0 20%"
-                        >
-                          <h1 style="color: #fff">
-                            Mauris accumsan massa non
-                          </h1>
-                          <p style="color: rgba(255,255,255,.6)">
-                            Consectetur condimentum, diam arcu tristique nibh,
-                            nec egestas diam elit at nulla. Suspendisse potenti.
-                            In non lacinia risus, ac tempor ipsum.
-                          </p>
-                          <hr class="no_line" style="margin:0 auto 15px" />
-                          <a
-                            class="button  button_size_2 button_theme button_js"
-                            href="/about.html"
-                            target="_blank"
-                          >
-                            <span class="button_label">Read more</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <slide v-for="(slider, index) in sliders" :key="index">
+                  <img :src="slider" :alt="index" style="width: 100%;" />
+                </slide>
+              </carousel>
               <HomeJadwalPelatihan />
               <div
                 class="section mcb-section"
@@ -351,12 +324,16 @@ export default {
         `${process.env.storage}/asosiasi/asosiasi-04.png`,
         `${process.env.storage}/asosiasi/asosiasi-05.png`
       ],
-      iconNext: `${process.env.storage}/icons/right_arrow.png`
+      iconNext: `${process.env.storage}/icons/right_arrow.png`,
+      sliders: [
+        `${process.env.storage}/sliders/slider-001.jpg`,
+        `${process.env.storage}/sliders/slider-002.jpg`
+      ]
     }
   },
   head() {
     return {
-      title: "LSPPMI",
+      title: "LSPPMI | Beranda",
       meta: [
         {
           hid: "description",
@@ -373,3 +350,14 @@ export default {
   }
 }
 </script>
+
+<style>
+.entry-content {
+  padding-top: 120px;
+}
+@media (max-width: 425px) {
+  .entry-content {
+    padding-top: 0px;
+  }
+}
+</style>
