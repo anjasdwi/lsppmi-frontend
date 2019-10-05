@@ -1,0 +1,195 @@
+.footer_logo {
+    margin-bottom: 10px;
+}
+
+.body {
+    margin-top: 50px;
+}
+
+.action_login {
+    float: right;
+    font-size: 14px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.action_login_header {
+    color: rgb(81, 172, 68) !important;
+}
+
+.bg_gray_soft {
+    background: #F7F7F7;
+}
+
+.btn_auth_google,
+.btn_auth_facebook {
+    width: 100%;
+    position: relative;
+}
+
+.btn_auth_google img,
+.btn_auth_facebook svg {
+    left: 20px;
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    z-index: 1;
+}
+
+.btn_auth_facebook svg {
+    color: #fff;
+    font-size: 16px;
+    left: 24px;
+    top: 11px;
+}
+
+.btn_auth_google button,
+.btn_auth_facebook button,
+.btn_resetpassword a {
+    background-color: #f2f4f5;
+    border-radius: 4px;
+    border: none !important;
+    color: #757575;
+    border: solid 1px #dddddd;
+    height: 40px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.btn_auth_facebook button,
+.btn_resetpassword a {
+    background-color: #375197;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn_block {
+    display: block;
+    height: 45px;
+    width: 100%;
+}
+
+.btn_primary {
+    background: #002350;
+    border: none;
+}
+
+.btn_orange,
+.btn_orange:hover,
+.btn_orange:focus {
+    background: rgb(81, 172, 68);
+    border: none;
+}
+
+.form_login,
+.form_register {
+    padding-top: 30px;
+    text-align: center;
+    background-image: url(https://storage.googleapis.com/lsppmi/assets/frontend/background/login.png);
+    background-position-x: 48%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.form_register {
+    background-position-y: 70%;
+    background-size: 950px;
+    height: 800px;
+}
+
+.form_login {
+    background-position-y: 90%;
+    background-size: 700px;
+    height: 600px;
+}
+
+.form_card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    left: calc(50% - calc(450px / 2));
+    padding: 25px 30px;
+    position: absolute;
+    text-align: left;
+    width: 450px;
+}
+
+.login_logo>img,
+.register_logo>img {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.form_card .has-error .ant-form-explain,
+.has-error .ant-form-split {
+    margin-bottom: 10px !important;
+    margin-top: 3px !important;
+}
+
+.input_login {
+    border-radius: 5px !important;
+    height: 45px !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+}
+
+.text_orange {
+    color: rgb(81, 172, 68);
+}
+
+.text_primary {
+    color: #002350;
+}
+
+.text_middle {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-bottom: 25px;
+}
+
+.text_middle span {
+    background: #ffffff;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #757575;
+}
+
+@media (max-width: 1024px) {
+    .form_card {
+        width: 400px;
+        left: calc(50% - calc(400px / 2));
+    }
+}
+
+@media (max-width: 768px) {
+    .form_register {
+        background-size: 100%;
+    }
+    /* .form_login {
+        background-size: 600px;
+    } */
+}
+
+@media (max-width: 425px) {
+    .form_register,
+    .form_login {
+        background: none;
+    }
+    .form_register>.form_card {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        left: 5%;
+        padding: 25px 20px;
+        width: 90%;
+    }
+    .form_login>.form_card {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        left: 5%;
+        padding: 25px 20px;
+        width: 90%;
+    }
+}

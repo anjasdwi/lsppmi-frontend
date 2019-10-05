@@ -1,0 +1,46 @@
+{
+    "name": "lsppmi",
+    "version": "1.0.0",
+    "description": "LSPPMI",
+    "author": "Imbar Winata",
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+        "build": "nuxt build",
+        "start": "cross-env NODE_ENV=production node server/index.js",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint",
+            "pre-push": "npm run lint"
+        }
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.25",
+        "@fortawesome/free-brands-svg-icons": "^5.11.2",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@fortawesome/vue-fontawesome": "^0.1.7",
+        "ant-design-vue": "^1.1.10",
+        "axios": "^0.19.0",
+        "express": "^4.16.4",
+        "nuxt": "^2.0.0",
+        "nuxt-fontawesome": "^0.4.0",
+        "vue-spinner": "^1.0.3"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "cross-env": "^5.2.1",
+        "eslint": "^6.5.1",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-loader": "^3.0.2",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-vue": "^5.2.3",
+        "husky": "^3.0.8",
+        "node-sass": "^4.12.0",
+        "nodemon": "^1.18.9",
+        "prettier": "^1.18.2",
+        "sass-loader": "^8.0.0"
+    }
+}
