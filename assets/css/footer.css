@@ -123,7 +123,7 @@ a:focus {
 }
 
 .footer__wrapper__container__column--sertificate {
-    padding-left: 70px;
+    /* padding-left: 70px; */
     float: left;
     width: 35%;
 }
@@ -287,7 +287,7 @@ a:focus {
 @media (min-width: 1200px) {
     .footer__wrapper__container {
         padding: 25px;
-        padding-left: 70px;
+        /* padding-left: 70px; */
     }
 }
 

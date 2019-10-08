@@ -135,7 +135,7 @@ import BeatLoader from "vue-spinner/src/BeatLoader.vue"
 import BodyDefault from "~/components/layout/body/default"
 // #NOTE: Import Repository
 import { RepositoryFactory } from "./../repositories/RepositoryFactory"
-const PostsRepository = RepositoryFactory.get("account")
+const AccountRepository = RepositoryFactory.get("account")
 
 export default {
   middleware: "public",
@@ -153,7 +153,7 @@ export default {
   methods: {
     async createMember(payload) {
       // #NOTE: Post Data Create Member
-      const response = await PostsRepository.createAccount(payload)
+      const response = await AccountRepository.createAccount(payload)
       const { code } = response.data
       this.isSubmit = false
 

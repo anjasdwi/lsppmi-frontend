@@ -16,11 +16,10 @@
                 />
               </div>
               <ul class="footer_link">
-                <li>Lembaga Sertifikasi Profesi Pasar Modal <br /></li>
                 <li>
-                  Wisma GKBI Lantai 6 Suite 606<br />
-                  Jl. Jend Sudirman Kav. 28<br />
-                  Jakarta, 10210<br />
+                  Sentra Radio Dalam,<br />
+                  Jl. Antena I No.3, Gandaria Utara<br />
+                  Kebayoran Baru, Jakarta Selatan 12140<br />
                 </li>
               </ul>
             </aside>

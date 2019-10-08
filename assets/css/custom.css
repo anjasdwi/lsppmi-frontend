@@ -128,7 +128,8 @@
     margin-top: 3px !important;
 }
 
-.input_login {
+.input_login,
+.input_standar {
     border-radius: 5px !important;
     height: 45px !important;
     margin-bottom: 0 !important;
@@ -159,6 +160,12 @@
     color: #757575;
 }
 
+.text_private {
+    font-size: 20px;
+    color: #35405a;
+    padding-bottom: 8px;
+}
+
 @media (max-width: 1024px) {
     .form_card {
         width: 400px;
@@ -170,9 +177,6 @@
     .form_register {
         background-size: 100%;
     }
-    /* .form_login {
-        background-size: 600px;
-    } */
 }
 
 @media (max-width: 425px) {

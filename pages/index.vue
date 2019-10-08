@@ -277,10 +277,12 @@
                           class="image_frame image_item no_link scale-with-grid aligncenter no_border"
                         >
                           <div class="image_wrapper">
-                            <img
-                              class="scale-with-grid image_grayscale"
-                              :src="association"
-                            />
+                            <a :href="association.link">
+                              <img
+                                class="scale-with-grid image_grayscale"
+                                :src="association.file"
+                              />
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -318,11 +320,26 @@ export default {
       title: "LSPPMI Title",
       activeMenu: "",
       associations: [
-        `${process.env.storage}/asosiasi/asosiasi-01.png`,
-        `${process.env.storage}/asosiasi/asosiasi-02.png`,
-        `${process.env.storage}/asosiasi/asosiasi-03.png`,
-        `${process.env.storage}/asosiasi/asosiasi-04.png`,
-        `${process.env.storage}/asosiasi/asosiasi-05.png`
+        {
+          file: `${process.env.storage}/asosiasi/asosiasi-01.png`,
+          link: "#"
+        },
+        {
+          file: `${process.env.storage}/asosiasi/asosiasi-02.png`,
+          link: "#"
+        },
+        {
+          file: `${process.env.storage}/asosiasi/asosiasi-03.png`,
+          link: "#"
+        },
+        {
+          file: `${process.env.storage}/asosiasi/asosiasi-04.png`,
+          link: "#"
+        },
+        {
+          file: `${process.env.storage}/asosiasi/asosiasi-05.png`,
+          link: "#"
+        }
       ],
       iconNext: `${process.env.storage}/icons/right_arrow.png`,
       sliders: [
@@ -353,9 +370,14 @@ export default {
 
 <style>
 .entry-content {
-  padding-top: 120px;
+  padding-top: 90px;
 }
 @media (max-width: 425px) {
+  .entry-content {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 767px) {
   .entry-content {
     padding-top: 0px;
   }

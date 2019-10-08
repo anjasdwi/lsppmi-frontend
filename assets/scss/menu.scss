@@ -1,0 +1,234 @@
+.header__logo {
+  max-height: 50px;
+  margin: 22px 0px
+}
+.login_btn {
+  color: rgb(238, 238, 238) !important;
+  padding: 0px 20px 0px 20px !important;
+  margin: 13px 0px 0px 30px !important;
+  max-height: 60px;
+}
+.megamenu {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 3;
+}
+.megamenu__body {
+  width: 80%;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+.megamenu__content {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  z-index: 10;
+  top: 90px;
+  padding-bottom: 50px;
+  min-height: 200px;
+}
+.megamenu__body__left {
+  width: 100%;
+  float: left;
+  padding-bottom: 5px;
+}
+.megamenu__body__right {
+  width: 100%;
+  float: left;
+}
+.megamenu__body__right--tentang ul>li {
+  width: 30%;
+  float: left;
+  padding: 10px 0px;
+}
+.megamenu__body__right--ujian ul>li {
+  width: 50%;
+  float: left;
+  padding: 10px 0px;
+}
+.megamenu__body__right ul>li {
+  width: 50%;
+  float: left;
+  padding: 10px 0px;
+}
+.megamenu__body__right_submenu {
+  width: 100%;
+  float: left;
+}
+.megamenu__body__right_submenu i {
+  color: rgb(81, 172, 68);
+}
+.megamenu__content a {
+  color: rgb(117, 117, 117) !important;
+}
+
+
+// --- Hamburger Menu ---
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border: solid 0 #fffce1;
+  background-color: #f7f9fb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 0px;
+  box-shadow: 3px 3px 28px -9px rgba(0, 0, 0, 0.24); 
+  &\--show {
+    width: 100%;
+    height: 100vh;
+    z-index: 1001;
+    position: fixed;
+    right: 0;
+    top:0;
+    background: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  &__header {
+    margin: 0 !important;
+    min-height: 90px;
+    min-width: 350px;
+    padding: 20px 30px;
+    -webkit-box-shadow: 3px 3px 28px -9px rgba(0,0,0,0.24);
+    -moz-box-shadow: 3px 3px 28px -9px rgba(0,0,0,0.24);
+    box-shadow: 3px 3px 28px -9px rgba(0,0,0,0.24);
+    border-bottom: 1px solid rgb(217, 217, 217);
+    &__close {
+      font-size: 40px;
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  &__body {
+    height: 80vh;
+    overflow: auto;
+    overflow-x: scroll;
+    font-size: 16px !important;
+    min-width: 250px;
+    a {
+      color: rgb(117, 117, 117);;
+      padding: 20px 35px;
+      display: block;
+      border-bottom: 1px solid rgb(238, 238, 238);
+    }
+    .arrow {
+      // display: none !important;
+    }
+    .ant-collapse, .ant-collapse-content {
+      border: 0px !important;
+      background-color: #fff !important;
+    }
+    .ant-collapse-content-box {
+      padding: 0px;
+    }
+    .ant-collapse-header {
+      padding: 20px 35px !important;
+      border-bottom: 1px solid rgb(238, 238, 238) !important;
+      color: rgb(117, 117, 117) !important;
+      white-space: nowrap;
+    }
+    &__list {
+      border-bottom: 0px !important;
+      font-size: 16px !important;
+      border-bottom: 1px solid rgb(238, 238, 238) !important;
+      &__btn {
+        padding: 30px 35px;
+        min-width: 150px;
+        button {
+          width:100%;
+        }
+      }
+      .ant-collapse-header {
+        // color: red !important;
+      }
+      ul {
+        padding: 0px 20px;
+        width: 100%;
+        // overflow: auto;
+        // overflow-x: scroll;
+      }
+      li {
+        padding: 0px 0px;
+        overflow: hidden;
+      }
+      a {
+        color: rgb(117, 117, 117);
+        border-bottom: 1px dashed rgb(238, 238, 238);
+        white-space: nowrap;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.responsive-menu {
+  color: rgb(81, 172, 68) !important;
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  font-size: 20px;
+  display: none;
+}
+
+.overlay {
+  opacity: 0;
+  &\:active {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transition: opacity .3s;
+    opacity: 0.5;
+  }
+}
+.top_bar_container {
+  width: 100% !important;
+}
+// --- End Hamburger ---
+
+// Extra small devices (portrait phones, less than 456px)
+@media (max-width: 456px) { 
+  .sidenav__body__list li {
+    overflow: auto;
+    overflow-x: scroll;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+  .responsive-menu {
+    right: 0px;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+  .responsive-menu {
+    right: 35px;
+  }  
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1250px) { 
+  .top_bar_right {
+    display: none;
+  }
+  .responsive-menu {
+    display: block;
+  }
+}

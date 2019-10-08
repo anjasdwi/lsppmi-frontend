@@ -1095,9 +1095,10 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 #Top_bar {
     position: absolute;
     left: 0;
-    top: 61px;
+    top: 0 !important;
     width: 100%;
     z-index: 30;
+    max-height: 95px !important;
 }
 
 #Top_bar .column {
@@ -1158,7 +1159,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 
 #Top_bar .logo {
     float: left;
-    margin: 0 30px 0 20px;
+    margin: 0 30px 0 30px;
 }
 
 #Top_bar .logo h1 {
@@ -1767,7 +1768,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
     }
     .header-fixed #Top_bar .logo {
         width: auto;
-        margin: 0 30px 0 20px;
+        margin: 0 30px 0 30px;
         padding: 0;
     }
     .header-fixed #Top_bar #logo {
@@ -2132,6 +2133,7 @@ body.header-stack:not(.template-slider) #Header {
 .header-transparent #Top_bar .top_bar_right,
 .header-transparent #Top_bar .top_bar_right:before {
     background: none;
+    width: 100% !important;
 }
 
 .header-transparent #Top_bar .top_bar_right {
@@ -4422,7 +4424,7 @@ body {
     }
     #Top_bar.is-sticky .logo {
         width: auto;
-        margin: 0 30px 0 20px;
+        margin: 0 30px 0 30px;
         padding: 0;
     }
     #Top_bar.is-sticky #logo {
@@ -4920,7 +4922,7 @@ body {
     .section_wrapper,
     .container,
     .with_aside .content_wrapper {
-        max-width: 708px;
+        max-width: 100%;
     }
     /* -------------------- */
     .hide-tablet {
@@ -5471,9 +5473,7 @@ body {
     #Top_bar .logo {
         position: static;
         float: left;
-        width: 100%;
-        text-align: center;
-        margin: 0
+        margin: 0px 30px 0px 30px;
     }
     #Top_bar .logo #logo {
         padding: 0!important;

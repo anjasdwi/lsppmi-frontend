@@ -19379,6 +19379,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 .header-transparent #Top_bar .top_bar_right,
 .header-transparent #Top_bar .top_bar_right:before {
     background: none;
+    width: 100% !important;
 }
 
 .header-transparent #Top_bar .top_bar_right {

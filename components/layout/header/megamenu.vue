@@ -1,21 +1,24 @@
 <template>
   <div class="megamenu">
-    <div class="megamenu__content">
+    <div class="megamenu__content" @mouseleave="onMouseLeave">
       <div class="megamenu__body">
-        <h2>Megamenu</h2>
         <div class="megamenu__body__left">
-          <ul>
-            <li v-for="(menu, index) in menus" :key="index">
-              <a v-bind:href="'/' + menu.link">{{ menu.title }}</a>
-            </li>
-          </ul>
+          <h2>{{ titleMenus }}</h2>
         </div>
-        <div class="megamenu__body__right">
+        <div
+          :class="{
+            'megamenu__body__right--ujian':
+              titleMenus == 'Ujian Sertifikasi Kompetensi',
+            'megamenu__body__right--tentang': titleMenus == 'Tentang Kami'
+          }"
+        >
           <ul>
             <li v-for="(menu, index) in menus" :key="index">
               <div class="megamenu__body__right_submenu">
-                <i class="icon-users" />
-                <a v-bind:href="'/' + menu.link">{{ menu.title }}</a>
+                <i class="icon-right-open" />
+                <nuxt-link :to="menu.link">
+                  {{ menu.title }}
+                </nuxt-link>
               </div>
             </li>
           </ul>
@@ -27,12 +30,22 @@
 
 <script>
 export default {
-  name: "Sertifikasi",
+  name: "Megamenu",
   props: {
     menus: {
       type: Array,
       required: true
-      // default: 'Lucas'
+      // default: "Megamenu"
+    },
+    titleMenus: {
+      type: String,
+      required: true,
+      default: "Megamenu"
+    }
+  },
+  methods: {
+    onMouseLeave: function() {
+      this.$emit("onMouseLeave")
     }
   }
 }

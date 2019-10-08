@@ -24,7 +24,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/member/ganti-email">
+              <nuxt-link to="/member/change-email">
                 <span>
                   <font-awesome-icon :icon="['fas', 'envelope']" />
                 </span>
@@ -32,7 +32,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/member/ganti-password">
+              <nuxt-link to="/member/change-password">
                 <span>
                   <font-awesome-icon :icon="['fas', 'unlock-alt']" />
                 </span>
@@ -89,6 +89,10 @@ export default {
   background: #fff;
   border-radius: 5px;
   padding: 16px;
+}
+.box_private_right > div {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .box_private_header {
   border-bottom: 1px dashed #f5f6fa;

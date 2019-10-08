@@ -5,7 +5,7 @@
         <font-awesome-icon :icon="['fas', 'times']" />
       </a>
     </div>
-    <div class="extras">
+    <!-- <div class="extras">
       <nuxt-link
         class="action_button"
         to="/pendaftaran"
@@ -14,7 +14,7 @@
         {{ token ? "Akun Saya" : "Login" }}
       </nuxt-link>
       <div class="extras-wrapper" />
-    </div>
+    </div> -->
     <div class="menu_wrapper" />
   </div>
 </template>

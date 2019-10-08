@@ -2,7 +2,7 @@
   <div class="background_white">
     <HeaderDefault />
     <BodyPrivate>
-      Private Page
+      Ganti Password
     </BodyPrivate>
     <FooterDefault />
     <HeaderDefaultMobile />

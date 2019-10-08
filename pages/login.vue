@@ -87,7 +87,7 @@ import BeatLoader from "vue-spinner/src/BeatLoader.vue"
 import BodyDefault from "~/components/layout/body/default"
 // #NOTE: Import Repository
 import { RepositoryFactory } from "./../repositories/RepositoryFactory"
-const PostsRepository = RepositoryFactory.get("account")
+const AccountRepository = RepositoryFactory.get("account")
 
 export default {
   middleware: "public",
@@ -105,7 +105,7 @@ export default {
   methods: {
     async loginMember(payload) {
       // #NOTE: Post Data Create Member
-      const response = await PostsRepository.loginMember(payload)
+      const response = await AccountRepository.loginMember(payload)
       const { code, message } = response.data
       this.isSubmit = false
 
@@ -116,7 +116,7 @@ export default {
           maxAge: 60 * 60 * 24 * 1 // 1Day
         })
         this.$store.commit("account/setToken", response.data.token)
-        this.$router.push("/member")
+        this.$router.push("/member/profile")
       } else {
         this.$notification.open({
           description: message,

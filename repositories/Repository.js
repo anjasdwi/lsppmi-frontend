@@ -5,6 +5,9 @@ import axios from "axios"
 const { dev } = process.env
 const baseURL = dev ? process.env.baseAPI.dev : process.env.baseAPI.prod
 
-export default axios.create({
-  baseURL
-})
+export default function(headers = {}) {
+  return axios.create({
+    baseURL,
+    headers
+  })
+}

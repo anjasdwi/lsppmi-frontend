@@ -7,11 +7,11 @@ module.exports = {
     dev: process.env.NODE_ENV !== "production",
     baseUrl: {
       dev: "http://localhost:3000",
-      prod: "http://api.lsppmi.com"
+      prod: "https://www.lsppmi.com"
     },
     baseAPI: {
       dev: "http://localhost:3300",
-      prod: "http://api.lsppmi.com"
+      prod: "http://localhost:3300"
     },
     storage: "https://storage.googleapis.com/lsppmi/assets/frontend"
   },
@@ -46,7 +46,7 @@ module.exports = {
         rel: "icon",
         type: "image/x-icon",
         href:
-          "https://storage.googleapis.com/lsppmi/assets/frontend/favicon.ico"
+          "https://storage.googleapis.com/lsppmi/assets/frontend/favicon.png"
       }
     ],
     script: [
@@ -72,8 +72,8 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: {
-    color: "red",
-    height: "5px"
+    color: "#51AC44",
+    height: "3px"
   },
   /*
    ** Global CSS
@@ -85,7 +85,7 @@ module.exports = {
     "@/assets/css/company2.css",
     "@/assets/css/custom.css",
     "@/assets/css/footer.css",
-    "@/assets/css/menu.css",
+    "@/assets/scss/menu.scss",
     "@/assets/scss/main.scss"
   ],
   /*
