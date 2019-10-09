@@ -1,10 +1,10 @@
 <template>
   <LayoutPublic>
     <SectionFive
-      classProps="header-ujiansertifikasi"
+      classProps="header-manajerinvestasi header-ujiansertifikasi"
       title="Perantara Pedagang Efek Pemasaran Terbatas"
     />
-    <SectionEight
+    <!-- <SectionEight
       image="http://be.beantownthemes.com/html/content/company2/images/home_company2_about1.jpg"
       mode="left"
     >
@@ -26,7 +26,7 @@
       :peoples="peoples"
       description="Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere."
       title="People"
-    />
+    /> -->
   </LayoutPublic>
 </template>
 
@@ -35,15 +35,15 @@
 import LayoutPublic from "~/components/layout/public"
 
 import SectionFive from "~/components/layout/section/section-05"
-import SectionEight from "~/components/layout/section/section-08"
-import SectionNine from "~/components/layout/section/section-09"
+// import SectionEight from "~/components/layout/section/section-08"
+// import SectionNine from "~/components/layout/section/section-09"
 
 export default {
   components: {
     LayoutPublic,
-    SectionFive,
-    SectionEight,
-    SectionNine
+    SectionFive
+    // SectionEight
+    // SectionNine
   },
   data() {
     return {

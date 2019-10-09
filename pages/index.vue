@@ -16,7 +16,9 @@
                 :per-page="1"
               >
                 <slide v-for="(slider, index) in sliders" :key="index">
-                  <img :src="slider" :alt="index" style="width: 100%;" />
+                  <a :href="slider.link">
+                    <img :src="slider.file" :alt="index" style="width: 100%;" />
+                  </a>
                 </slide>
               </carousel>
               <HomeJadwalPelatihan />
@@ -204,8 +206,18 @@ export default {
       ],
       iconNext: `${process.env.storage}/icons/right_arrow.png`,
       sliders: [
-        `${process.env.storage}/sliders/slider-001.jpg`,
-        `${process.env.storage}/sliders/slider-002.jpg`
+        {
+          file: `${process.env.storage}/sliders/slider-001.jpg`,
+          link: "https://lsppmi.id/"
+        },
+        {
+          file: `${process.env.storage}/sliders/slider-002.jpg`,
+          link: "https://lsppmi.id/"
+        },
+        {
+          file: `${process.env.storage}/sliders/slider-003.jpg`,
+          link: "https://lsppmi.id/"
+        }
       ]
     }
   },

@@ -3,8 +3,8 @@
     <a-row type="flex" justify="center" align="middle">
       <a-col :xs="24" :sm="24" :md="24" :lg="12" class="sectionthree__image">
         <img />
-        <img class="img--frame1" src="image1" alt="LSPPMI" />
-        <img class="img--frame2" src="image2" alt="LSPPMI" />
+        <img class="img--frame1" :src="image1" alt="LSPPMI" />
+        <img class="img--frame2" :src="image2" alt="LSPPMI" />
       </a-col>
       <a-col :xs="24" :sm="24" :md="24" :lg="12" class="sectionthree__text">
         <h2>{{ title }}</h2>

@@ -34,16 +34,18 @@
               >
                 <ul>
                   <li v-for="(child, index) in menu.childMenu" :key="index">
-                    <a v-bind:href="'/' + child.link"
-                      ><i class="icon-right-open" />{{ child.title }}</a
-                    >
+                    <nuxt-link :to="child.link">
+                      <i class="icon-right-open" />{{ child.title }}
+                    </nuxt-link>
                   </li>
                 </ul>
               </a-collapse-panel>
             </a-collapse>
           </div>
           <div v-else>
-            <a v-bind:href="'/' + menu.parentMenu">{{ menu.parentMenu }}</a>
+            <nuxt-link :to="menu.link">
+              {{ menu.parentMenu }}
+            </nuxt-link>
           </div>
         </div>
         <!-- <div class="sidenav__body__list__btn">

@@ -1,26 +1,19 @@
 <template>
   <LayoutPublic>
-    Penjual Efek Reksa Dana
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <SectionFive
+      classProps="header-location header-manajerinvestasi header-usk"
+      title="Penjual Efek Reksa Dana"
+    />
   </LayoutPublic>
 </template>
 
 <script>
 // #NOTE: Import Layout
 import LayoutPublic from "~/components/layout/public"
+import SectionFive from "~/components/layout/section/section-05"
 
 export default {
-  components: { LayoutPublic },
+  components: { LayoutPublic, SectionFive },
   data() {
     return {}
   },

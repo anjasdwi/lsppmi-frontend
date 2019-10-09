@@ -42,7 +42,7 @@ export default {
 }
 @media (max-width: 425px) {
   .body_public {
-    padding-top: 0px;
+    padding-top: 90px !important;
     transform: translateY(-4px);
   }
   .body_public_child {

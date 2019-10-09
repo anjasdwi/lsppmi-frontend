@@ -41,6 +41,11 @@ export default {
   margin-bottom: 150px !important;
 }
 .header-manajerinvestasi::before {
-  content: "Manajer Investasi";
+  content: "Ujian Sertifikasi Kompetensi";
+}
+@media (max-width: 425px) {
+  .header-manajerinvestasi {
+    margin-top: 100px !important;
+  }
 }
 </style>

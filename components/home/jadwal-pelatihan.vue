@@ -117,8 +117,8 @@ export default {
 
 <style>
 .product-and-service {
-  padding-top: 55px;
-  padding-bottom: 35px;
+  padding-top: 85px;
+  padding-bottom: 65px;
 }
 .item-product {
   background-color: #fff;

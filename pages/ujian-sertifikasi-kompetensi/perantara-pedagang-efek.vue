@@ -1,26 +1,19 @@
 <template>
   <LayoutPublic>
-    Perantara Pedagang Efek
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <SectionFive
+      classProps="header-location header-manajerinvestasi header-usk"
+      title="Perantara Pedagang Efek"
+    />
   </LayoutPublic>
 </template>
 
 <script>
 // #NOTE: Import Layout
 import LayoutPublic from "~/components/layout/public"
+import SectionFive from "~/components/layout/section/section-05"
 
 export default {
-  components: { LayoutPublic },
+  components: { LayoutPublic, SectionFive },
   data() {
     return {}
   },

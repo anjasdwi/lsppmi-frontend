@@ -8,7 +8,7 @@
     <SectionFourteen
       image="https://storage.googleapis.com/lsppmi/assets/frontend/logo.png"
       title="Profile LSPPMI"
-      style="padding-top:70px;"
+      style="padding-top:30px;"
     >
       Lembaga Sertifikasi Profesi Pasar Modal Indonesai (LSPPMI) adalah lembaga
       pelaksana kegiatan sertifikasi kompetensi kerja di bidang Pasar Modal yang
@@ -28,11 +28,10 @@
       :datas="datas"
       :lg="8"
     />
-    <SectionFive
-      classProps="header-maksud"
-      title="Maksud dan Tujuan"
-      id="maksuddantujuan"
-    />
+    <div id="maksuddantujuan" style="height: 100px;margin-top: -170px;">
+      &nbsp;
+    </div>
+    <SectionFive classProps="header-maksud" title="Maksud dan Tujuan" />
     <SectionTwelve
       style="padding-top:0px; margin-bottom: 60px;"
       :datas="datasMaksud"

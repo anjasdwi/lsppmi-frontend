@@ -48,7 +48,7 @@ export default {
 }
 .sectionfourteen__image img {
   border-radius: 12px;
-  max-height: 70px;
+  max-width: 300px !important;
 }
 .sectionfourteen__text {
   color: rgba(49, 53, 59, 0.68);

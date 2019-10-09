@@ -9,7 +9,7 @@
       image1="https://ticmi.co.id/upload/gallery/2018/launching-sertifikasi-dan-spm-online-ticmi-2018.jpg"
       image2="https://ticmi.co.id/upload/gallery/2018/ticmi-corner-di-idx-chanel-ticmi-2018.jpg"
       title="Legalitas dan Lisensi"
-      style="padding-bottom: 0px;"
+      style="padding-bottom: 0px; margin-top:150px"
     >
       {{ sejarah[0].description }}
     </SectionThree>

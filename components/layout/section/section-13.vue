@@ -48,7 +48,7 @@ export default {
 .sectionthirten__text p {
   margin: 0 0 25px;
   line-height: 30px;
-  padding: 0px 75px;
+  padding: 0px 0px;
 }
 .sectionthirten__text h2 {
   color: rgba(49, 53, 59, 0.96) !important;
