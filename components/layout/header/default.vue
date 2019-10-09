@@ -2,7 +2,7 @@
   <div id="Header_wrapper" class="bg-parallax" data-enllax-ratio="0.3">
     <header id="Header">
       <div class="header_placeholder" />
-      <div id="Top_bar">
+      <div id="Top_bar" style="position: absolute;">
         <div class="container top_bar_container">
           <div class="column one">
             <div class="top_bar_left clearfix">
@@ -54,11 +54,15 @@ const allMenus = [
       },
       {
         title: "Maksud dan Tujuan",
-        link: "/tentang-kami/maksud-dan-tujuan"
+        link: "/tentang-kami/profile#maksuddantujuan"
       },
       {
         title: "Sejarah Singkat",
         link: "/tentang-kami/sejarah-singkat"
+      },
+      {
+        title: "Legalitas dan Lisensi",
+        link: "/tentang-kami/legalitas-dan-lisensi"
       },
       {
         title: "Kebijakan Mutu",

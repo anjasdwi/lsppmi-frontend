@@ -26,6 +26,7 @@ export default {
   max-width: 1145px;
   padding: 25px 10px;
   padding-right: 0;
+  overflow: hidden;
 }
 @media (max-width: 1024px) {
   .body_public_child {

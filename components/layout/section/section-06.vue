@@ -1,6 +1,6 @@
 <template>
   <div class="section_six">
-    <img :src="decoration" alt="Decoration" class="section_six__decoration" />
+    <!-- <img :src="decoration" alt="Decoration" class="section_six__decoration" /> -->
     <div class="section_six__banner-container">
       <div class="section_six__banner">
         <img :src="banner" alt="" class="section_six__banner-image" />
@@ -59,15 +59,18 @@ export default {
   }
 }
 @media (max-width: 1024px) {
-  /* .section_six .section_six__decoration {
+  .section_six .section_six__decoration {
     display: none;
   }
   .section_six__banner-container {
     margin-left: 53px !important;
-  } */
-  /* .section_six__copyw {
-    width: 65% !important;
-  } */
+  }
+  .section_six__copyw {
+    width: 55% !important;
+  }
+  .section_six .section_six__banner {
+    left: 40% !important;
+  }
 }
 @media (min-width: 992px) {
   .section_six__banner-container {
@@ -80,9 +83,20 @@ export default {
     padding-right: 15px;
     padding-left: 15px;
   }
-  /* .section_six__banner-container {
+}
+@media (max-width: 768px) {
+  .section_six__banner-container {
     margin-left: 15px !important;
-  } */
+  }
+}
+@media (max-width: 425px) {
+  .section_six__banner-container {
+    margin-left: 5px !important;
+    padding-right: 0 !important;
+  }
+  .section_six__copyw {
+    width: 100% !important;
+  }
 }
 .section_six {
   -webkit-box-align: center;

@@ -66,7 +66,7 @@
               <ul class="footer_link">
                 <li>
                   <i class="icon-right-open" />
-                  <a href="#">021-57903476 / 021-57903477</a>
+                  <a href="#">(021) 7279-2569 / 2804 / 4185</a>
                 </li>
                 <li>
                   <i class="icon-right-open" />
@@ -77,7 +77,8 @@
                 Silakan tulis email anda untuk mendapatkan informasi terbaru
                 mengenai kegiatan LSPPMI.
               </p>
-              <input type="text" /><input type="submit" />
+              <input type="text" placeholder="Masukkan email anda ..." />
+              <input type="submit" />
             </aside>
           </div>
         </div>

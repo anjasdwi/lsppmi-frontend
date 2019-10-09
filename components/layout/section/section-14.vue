@@ -1,12 +1,10 @@
 <template>
-  <div class="sectionthree">
+  <div class="sectionfourteen">
     <a-row type="flex" justify="center" align="middle">
-      <a-col :xs="24" :sm="24" :md="24" :lg="12" class="sectionthree__image">
-        <img />
-        <img class="img--frame1" src="image1" alt="LSPPMI" />
-        <img class="img--frame2" src="image2" alt="LSPPMI" />
+      <a-col :xs="24" :sm="24" :md="24" :lg="12" class="sectionfourteen__image">
+        <img :src="image" alt="image" />
       </a-col>
-      <a-col :xs="24" :sm="24" :md="24" :lg="12" class="sectionthree__text">
+      <a-col :xs="24" :sm="24" :md="24" :lg="12" class="sectionfourteen__text">
         <h2>{{ title }}</h2>
         <p>
           <slot />
@@ -18,14 +16,9 @@
 
 <script>
 export default {
-  name: "SectionThree",
+  name: "SectionFourteen",
   props: {
-    image1: {
-      type: String,
-      required: true,
-      default: ""
-    },
-    image2: {
+    image: {
       type: String,
       required: true,
       default: ""
@@ -46,36 +39,25 @@ export default {
 .border {
   border: 1px solid gray;
 }
-.sectionthree {
+.sectionfourteen {
   margin-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
-.sectionthree__image {
-  padding-right: 60px;
+.sectionfourteen__image {
+  text-align: center;
 }
-.sectionthree__image img {
+.sectionfourteen__image img {
   border-radius: 12px;
+  max-height: 70px;
 }
-.sectionthree__image .img--frame1 {
-  width: 345px;
-  margin-left: 60px;
-  left: 235px;
-}
-.sectionthree__image .img--frame2 {
-  top: -40px;
-  position: absolute;
-  width: 119px;
-  right: 0px;
-  left: 330px;
-}
-.sectionthree__text {
+.sectionfourteen__text {
   color: rgba(49, 53, 59, 0.68);
 }
-.sectionthree__text p {
+.sectionfourteen__text p {
   margin: 0 0 25px;
   line-height: 30px;
 }
-.sectionthree__text h2 {
+.sectionfourteen__text h2 {
   color: rgba(49, 53, 59, 0.96) !important;
   font-weight: 600 !important;
   font-size: 30px;
@@ -84,8 +66,9 @@ export default {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   position: relative;
+  padding-top: 15px;
 }
-.sectionthree__text h2::after {
+.sectionfourteen__text h2::after {
   background-color: rgb(81, 172, 68);
   bottom: -5px;
   content: "";
@@ -95,5 +78,20 @@ export default {
   position: absolute;
   transform: translate(-50%, 0);
   width: 127px;
+}
+.sectionfourteen__text a {
+  padding: 3px 5px;
+}
+
+@media (max-width: 575.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 991.98px) {
+  .sectionfourteen__image {
+    text-align: left;
+  }
+}
+@media (max-width: 1199.98px) {
 }
 </style>

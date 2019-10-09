@@ -20,164 +20,21 @@
                 </slide>
               </carousel>
               <HomeJadwalPelatihan />
-              <div
-                class="section mcb-section"
-                style="padding-top:100px; padding-bottom:20px; background-color:#f4f6fd"
-              >
-                <div class="section_wrapper mcb-section-inner">
-                  <div class="wrap mcb-wrap one valign-top clearfix">
-                    <div class="mcb-wrap-inner">
-                      <div
-                        class="column mcb-column one-fourth column_placeholder"
-                      >
-                        <div class="placeholder">
-                          &nbsp;
-                        </div>
-                      </div>
-                      <div class="column mcb-column one-second column_column">
-                        <div class="column_attr clearfix align_center">
-                          <h2>Profile Ringkas LSPPMI</h2>
-                          <p>
-                            Curabitur sed iaculis dolor, non congue ligula.
-                            Maecenas imperdiet ante eget hendrerit posuere.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="section mcb-section equal-height-wrap"
-                style="padding-top:0px; padding-bottom:60px; background-color:#f4f6fd"
-              >
-                <div class="section_wrapper mcb-section-inner">
-                  <div
-                    class="wrap mcb-wrap one-second valign-middle clearfix"
-                    style="padding:0 1%"
-                  >
-                    <div class="mcb-wrap-inner">
-                      <div class="column mcb-column one column_image">
-                        <div
-                          class="image_frame image_item no_link scale-with-grid aligncenter no_border"
-                        >
-                          <div class="image_wrapper">
-                            <img
-                              class="scale-with-grid"
-                              src="/images/home_company2_pic11.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="wrap mcb-wrap one-second valign-middle clearfix"
-                    style="padding:0 0 0 5%"
-                  >
-                    <div class="mcb-wrap-inner">
-                      <div class="column mcb-column one column_column">
-                        <div class="column_attr clearfix">
-                          <h3>
-                            Ut ultricies imperdiet sodales. Aliquam fringilla
-                            aliquam ex sit amet
-                          </h3>
-                          <hr class="no_line" style="margin: 0 auto 10px" />
-                          <p>
-                            Curabitur sed iaculis dolor, non congue ligula.
-                            Maecenas imperdiet ante eget hendrerit posuere. Nunc
-                            urna libero, congue porta nibh a, semper feugiat
-                            sem. Sed auctor dui eleifend, scelerisque eros ut,
-                            pellentesque nibh. Nam lacinia suscipit.
-                          </p>
-                          <hr class="no_line" style="margin: 0 auto 5px" />
-                          <div
-                            class="image_frame image_item scale-with-grid no_border hover-disable"
-                          >
-                            <div class="image_wrapper">
-                              <a href="/about.html">
-                                <div class="mask" />
-                                <img class="scale-with-grid" :src="iconNext" />
-                              </a>
-                              <div class="image_links">
-                                <a href="/about.html" class="link">
-                                  <i class="icon-link" />
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="section mcb-section equal-height-wrap"
-                style="padding-top:0px; padding-bottom:60px; background-color:#f4f6fd"
-              >
-                <div class="section_wrapper mcb-section-inner">
-                  <div
-                    class="wrap mcb-wrap one-second valign-middle clearfix"
-                    style="padding:0 5% 0 0"
-                  >
-                    <div class="mcb-wrap-inner">
-                      <div class="column mcb-column one column_column">
-                        <div class="column_attr clearfix">
-                          <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit
-                          </h3>
-                          <hr class="no_line" style="margin: 0 auto 10px" />
-                          <p>
-                            Curabitur sed iaculis dolor, non congue ligula.
-                            Maecenas imperdiet ante eget hendrerit posuere. Nunc
-                            urna libero, congue porta nibh a, semper feugiat
-                            sem. Sed auctor dui eleifend, scelerisque eros ut,
-                            pellentesque nibh. Nam lacinia suscipit.
-                          </p>
-                          <hr class="no_line" style="margin: 0 auto 5px" />
-                          <div
-                            class="image_frame image_item scale-with-grid no_border hover-disable"
-                          >
-                            <div class="image_wrapper">
-                              <a href="/about.html">
-                                <div class="mask" />
-                                <img class="scale-with-grid" :src="iconNext" />
-                              </a>
-                              <div class="image_links">
-                                <a href="/about.html" class="link">
-                                  <i class="icon-link" />
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="wrap mcb-wrap one-second valign-middle clearfix"
-                    style="padding:0 1%"
-                  >
-                    <div class="mcb-wrap-inner">
-                      <div class="column mcb-column one column_image">
-                        <div
-                          class="image_frame image_item no_link scale-with-grid aligncenter no_border"
-                        >
-                          <div class="image_wrapper">
-                            <img
-                              class="scale-with-grid"
-                              src="/images/home_company2_pic12.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
+              <BodyPublic class="body--home">
+                <SectionTwo
+                  btnName="Selengkapnya"
+                  image="https://ticmi.co.id/upload/gallery/2018/wisuda-periode-1-ticmi-2018.jpg"
+                  link="/tentang-kami/profile"
+                  title="Profile LSPPMI"
+                >
+                  Lembaga Sertifikasi Profesi Pasar Modal Indonesai (LSPPMI)
+                  adalah lembaga pelaksana kegiatan sertifikasi kompetensi kerja
+                  di bidang Pasar Modal yang mendapat lisensi dari Badan
+                  Nasional Sertifikasi Profesi (BNSP) dan didirikan oleh
+                  asosiasi profesi dan asosiasi industri di bidang pasar modal.
+                </SectionTwo>
+              </BodyPublic>
+              <!-- <div
                 class="section mcb-section"
                 style="padding-top:100px; padding-bottom:60px"
               >
@@ -252,7 +109,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div
                 class="section mcb-section section-border-bottom bg_gray_soft"
                 style="padding-top:50px; padding-bottom:50px"
@@ -303,17 +160,21 @@
 
 <script>
 // #NOTE: Import Layout
+import BodyPublic from "~/components/layout/body/public"
 import FooterDefault from "~/components/layout/footer/default"
 import HeaderDefault from "~/components/layout/header/default"
 import HeaderDefaultMobile from "~/components/layout/header/mobile"
+import SectionTwo from "~/components/layout/section/section-02"
 // #NOTE: Import Component Home
 import HomeJadwalPelatihan from "~/components/home/jadwal-pelatihan"
 export default {
   components: {
+    BodyPublic,
     FooterDefault,
     HeaderDefault,
     HeaderDefaultMobile,
-    HomeJadwalPelatihan
+    HomeJadwalPelatihan,
+    SectionTwo
   },
   data() {
     return {
@@ -370,16 +231,24 @@ export default {
 
 <style>
 .entry-content {
-  padding-top: 90px;
+  padding-top: 65px;
 }
-@media (max-width: 425px) {
-  .entry-content {
-    padding-top: 0px;
-  }
+.body--home {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+.body--home .sectiontwo {
+  margin-top: 15px !important;
+  padding-bottom: 10px !important;
 }
 @media (max-width: 767px) {
   .entry-content {
     padding-top: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .entry-content {
+    padding-top: 70px;
   }
 }
 </style>

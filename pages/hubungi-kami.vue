@@ -24,14 +24,16 @@
               </SectionFive>
             </BodyPublic>
             <SectionSix
-              banner="https://resizeimage.net/viewimg/SyQ74FpxENQAgzrL/49hym/278.jpg"
+              :banner="banner"
               subtitle="Kontak Kami"
               title="Hubungi Kami:"
             >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum.
+              Kami sangat berterima kasih jika Anda bersedia memberikan masukan
+              dan pertanyaan kepada tim kami pada setiap hari kerja antara pk.
+              09.00-17.00 WIB melalui telepon, email, maupun fasilitas chatting
+              kami.<br />
+              Email : info@lsppmi.com<br />
+              Telp : (021) 7279-2569 / 2804 / 4185
             </SectionSix>
           </div>
         </div>
@@ -64,6 +66,7 @@ export default {
   },
   data() {
     return {
+      banner: `${process.env.storage}/background/contact-us.jpg`,
       map: `${process.env.storage}/about/location.jpg`
     }
   },

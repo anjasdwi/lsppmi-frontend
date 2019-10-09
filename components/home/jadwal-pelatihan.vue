@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="section mcb-section"
-    style="padding-top:100px; padding-bottom:60px"
-  >
+  <div class="section mcb-section product-and-service">
     <div class="section_wrapper mcb-section-inner">
       <div class="wrap mcb-wrap one valign-top clearfix">
         <div class="mcb-wrap-inner">
@@ -13,7 +10,7 @@
           </div>
           <div class="column mcb-column one-second column_column">
             <div class="column_attr clearfix align_center">
-              <h2>Jadwal Pelatihan</h2>
+              <h2>Produk dan Layanan</h2>
               <p>
                 Nam vel justo cursus, faucibus lorem eget, egestas eros.
                 Maecenas eleifend erat at justo fringilla imperdiet imperdiet
@@ -23,140 +20,31 @@
           <div class="column mcb-column one column_divider">
             <hr class="no_line" />
           </div>
-          <div class="column mcb-column one-fourth column_column">
-            <div
-              class="column_attr clearfix align_center"
-              style=" background-color:#fff; padding:30px 40px; box-shadow: 0 0px 20px rgba(0,0,0,.05); border-radius: 10px; margin: 0 2%; border: 1px solid #f2f2f2"
-            >
+          <div
+            v-for="(product, i) in products"
+            :key="i"
+            class="column mcb-column one-fourth column_column"
+          >
+            <div class="column_attr clearfix align_center item-product">
               <div
                 class="image_frame image_item no_link scale-with-grid alignnone no_border"
               >
                 <div class="image_wrapper">
-                  <img class="scale-with-grid" :src="iconCertification" />
+                  <img class="scale-with-grid" :src="product.image" />
                 </div>
               </div>
-              <hr class="no_line" style="margin:0 auto 30px" />
-              <h5>Lorem ipsum</h5>
-              <p>
-                Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit
-              </p>
+              <hr class="no_line item-line" style="margin:0 auto 30px" />
+              <h5>{{ product.name }}</h5>
+              <p>{{ product.description }}</p>
               <hr class="no_line" style="margin:0 auto 5px" />
               <div
                 class="image_frame image_item scale-with-grid no_border hover-disable"
               >
                 <div class="image_wrapper">
                   <a href="#">
-                    <div class="mask" />
-                    <img
-                      class="scale-with-grid"
-                      :src="iconNext"
-                      alt="home_company2_pic5"
-                    />
-                  </a>
-                  <div class="image_links">
-                    <a href="#" class="link">
-                      <i class="icon-link" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column mcb-column one-fourth column_column">
-            <div
-              class="column_attr clearfix align_center"
-              style=" background-color:#fff; padding:30px 40px; box-shadow: 0 0px 20px rgba(0,0,0,.05); border-radius: 10px; margin: 0 2%; border: 1px solid #f2f2f2"
-            >
-              <div
-                class="image_frame image_item no_link scale-with-grid alignnone no_border"
-              >
-                <div class="image_wrapper">
-                  <img class="scale-with-grid" :src="iconCertification" />
-                </div>
-              </div>
-              <hr class="no_line" style="margin:0 auto 30px" />
-              <h5>Aliquam fringilla</h5>
-              <p>
-                Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit
-              </p>
-              <hr class="no_line" style="margin: 0 auto 5px" />
-              <div
-                class="image_frame image_item scale-with-grid no_border hover-disable"
-              >
-                <div class="image_wrapper">
-                  <a href="#">
-                    <div class="mask" />
-                    <img class="scale-with-grid" :src="iconNext" />
-                  </a>
-                  <div class="image_links">
-                    <a href="#" class="link">
-                      <i class="icon-link" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column mcb-column one-fourth column_column">
-            <div
-              class="column_attr clearfix align_center"
-              style=" background-color:#fff; padding:30px 40px; box-shadow: 0 0px 20px rgba(0,0,0,.05); border-radius: 10px; margin: 0 2%; border: 1px solid #f2f2f2"
-            >
-              <div
-                class="image_frame image_item no_link scale-with-grid alignnone no_border"
-              >
-                <div class="image_wrapper">
-                  <img class="scale-with-grid" :src="iconCertification" />
-                </div>
-              </div>
-              <hr class="no_line" style="margin:0 auto 30px" />
-              <h5>Sed ultrices</h5>
-              <p>
-                Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit
-              </p>
-              <hr class="no_line" style="margin: 0 auto 5px" />
-              <div
-                class="image_frame image_item scale-with-grid no_border hover-disable"
-              >
-                <div class="image_wrapper">
-                  <a href="#">
-                    <div class="mask" />
-                    <img class="scale-with-grid" :src="iconNext" />
-                  </a>
-                  <div class="image_links">
-                    <a href="#" class="link">
-                      <i class="icon-link" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column mcb-column one-fourth column_column">
-            <div
-              class="column_attr clearfix align_center"
-              style=" background-color:#fff; padding:30px 40px; box-shadow: 0 0px 20px rgba(0,0,0,.05); border-radius: 10px; margin: 0 2%; border: 1px solid #f2f2f2"
-            >
-              <div
-                class="image_frame image_item no_link scale-with-grid alignnone no_border"
-              >
-                <div class="image_wrapper">
-                  <img class="scale-with-grid" :src="iconCertification" />
-                </div>
-              </div>
-              <hr class="no_line" style="margin:0 auto 30px" />
-              <h5>Proin risus</h5>
-              <p>
-                Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit
-              </p>
-              <hr class="no_line" style="margin: 0 auto 5px" />
-              <div
-                class="image_frame image_item scale-with-grid no_border hover-disable"
-              >
-                <div class="image_wrapper">
-                  <a href="#">
-                    <div class="mask" />
-                    <img class="scale-with-grid" :src="iconNext" />
+                    <div style="color:#333;height:20px;padding-top:10px;">
+                      <u>Selengkapnya</u>
+                    </div>
                   </a>
                   <div class="image_links">
                     <a href="#" class="link">
@@ -178,9 +66,9 @@
           <div class="column mcb-column one-third column_button">
             <a
               class="button button_full_width button_size_2 button_theme button_js"
-              href="/pricing.html"
+              href="#"
             >
-              <span class="button_label">View more</span>
+              <span class="button_label">Lihat Semua</span>
             </a>
           </div>
         </div>
@@ -195,8 +83,57 @@ export default {
   data() {
     return {
       iconCertification: `${process.env.storage}/icons/certification.png`,
-      iconNext: `${process.env.storage}/icons/right_arrow.png`
+      iconNext: `${process.env.storage}/icons/right_arrow.png`,
+      products: [
+        {
+          description: "Wakil Perantara Pedagang Efek",
+          image:
+            "https://storage.googleapis.com/lsppmi/assets/frontend/product/WPPE.png",
+          name: "WPPE"
+        },
+        {
+          description: "Wakil Manajer Investasi",
+          image:
+            "https://storage.googleapis.com/lsppmi/assets/frontend/product/WMI.png",
+          name: "WMI"
+        },
+        {
+          description: "Ahli Syariah Pasar Modal",
+          image:
+            "https://storage.googleapis.com/lsppmi/assets/frontend/product/ASPM.png",
+          name: "ASPM"
+        },
+        {
+          description: "Wakil Penjamin Emisi Efek",
+          image:
+            "https://storage.googleapis.com/lsppmi/assets/frontend/product/WPEE.png",
+          name: "WPEE"
+        }
+      ]
     }
   }
 }
 </script>
+
+<style>
+.product-and-service {
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+.item-product {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.05);
+  margin: 0 2%;
+  padding: 30px 40px;
+}
+@media (max-width: 425px) {
+  .item-product {
+    margin-bottom: 30px;
+  }
+  .item-line {
+    margin-bottom: 0px;
+  }
+}
+</style>
