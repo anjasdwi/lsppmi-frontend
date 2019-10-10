@@ -275,14 +275,7 @@ img.scale-with-grid,
 }
 
 .image_grayscale {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     width: 50%;
-}
-
-.image_grayscale:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
 }
 
 iframe {

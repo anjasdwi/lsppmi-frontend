@@ -194,6 +194,10 @@ export default {
         {
           file: `${process.env.storage}/asosiasi/asosiasi-03.png`,
           link: "#"
+        },
+        {
+          file: `${process.env.storage}/asosiasi/asosiasi-04.png`,
+          link: "#"
         }
       ],
       iconNext: `${process.env.storage}/icons/right_arrow.png`,
