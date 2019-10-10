@@ -56,7 +56,7 @@ export default {
   width: 100%;
   left: 0;
   top: 95px;
-  background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20150513235008-new-york-city-life-sunrise-skyline-sunset.jpeg?width=1000");
+  background-image: url("https://storage.googleapis.com/lsppmi/assets/frontend/sliders/slider-003.jpg");
   opacity: 1;
   position: absolute;
 }
