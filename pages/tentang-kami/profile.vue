@@ -1,9 +1,8 @@
 <template>
   <LayoutPublic>
-    <SectionFour title="Lorem Ipsum">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    <SectionFour title="Tentang Kami">
+      Kami merupakan lembaga resmi yang dipercaya untuk melaksanakan kegiatan
+      sertifikasi kompetensi kerja di bidang Pasar Modal.
     </SectionFour>
     <SectionFourteen
       image="https://storage.googleapis.com/lsppmi/assets/frontend/logo.png"
@@ -33,7 +32,7 @@
     </div>
     <SectionFive classProps="header-maksud" title="Maksud dan Tujuan" />
     <SectionTwelve
-      style="padding-top:0px; margin-bottom: 60px;"
+      style="padding-top:0px; margin-bottom: 60px; padding-bottom: 70px !important;"
       :datas="datasMaksud"
     />
   </LayoutPublic>

@@ -85,4 +85,19 @@ export default {
   margin: 0 0 25px;
   line-height: 30px;
 }
+
+@media (max-width: 575.98px) {
+  .sectiontwelve__text {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
 </style>

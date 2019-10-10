@@ -126,7 +126,7 @@
                   <div
                     class="wrap mcb-wrap one  column-margin-20px valign-top clearfix"
                   >
-                    <div class="mcb-wrap-inner">
+                    <div class="mcb-wrap-inner asociation">
                       <div
                         v-for="(association, index) in associations"
                         :key="index"
@@ -194,14 +194,6 @@ export default {
         {
           file: `${process.env.storage}/asosiasi/asosiasi-03.png`,
           link: "#"
-        },
-        {
-          file: `${process.env.storage}/asosiasi/asosiasi-04.png`,
-          link: "#"
-        },
-        {
-          file: `${process.env.storage}/asosiasi/asosiasi-05.png`,
-          link: "#"
         }
       ],
       iconNext: `${process.env.storage}/icons/right_arrow.png`,
@@ -242,6 +234,11 @@ export default {
 </script>
 
 <style>
+.asociation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .entry-content {
   padding-top: 65px;
 }

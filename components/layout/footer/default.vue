@@ -87,7 +87,8 @@ export default {
         },
         {
           title: "Perantara Pedagang Efek Pemasaran",
-          link: "/ujian-sertifikasi-kompetensi/perantara-pedagang-efek-pemasaran"
+          link:
+            "/ujian-sertifikasi-kompetensi/perantara-pedagang-efek-pemasaran"
         },
         {
           title: "Perantara Pedagang Efek",

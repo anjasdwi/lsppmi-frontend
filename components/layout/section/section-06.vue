@@ -97,6 +97,15 @@ export default {
   .section_six__copyw {
     width: 100% !important;
   }
+  .section_six .section_six__title-top {
+    font-size: 16px !important;
+  }
+  .section_six .section_six__title-big {
+    font-size: 20px !important;
+  }
+  .section_six .section_six__desc {
+    font-size: 12px !important;
+  }
 }
 .section_six {
   -webkit-box-align: center;

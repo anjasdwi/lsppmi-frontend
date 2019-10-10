@@ -1,14 +1,13 @@
 <template>
   <LayoutPublic>
-    <SectionFour title="Lorem Ipsum">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    <SectionFour title="Penutup">
+      Kami akan turut mempersiapkan dan menyeleksi tenaga-tenaga profesional
+      dalam menunjang perkembangan Pasar Modal di Indonesia.
     </SectionFour>
     <SectionFourteen
       image="https://ticmi.co.id/upload/gallery/2018/ticmi-corner-di-idx-chanel-ticmi-2018.jpg"
       title="Penutup"
-      style="padding-top: 20px; padding-bottom: 45px;"
+      style="padding-top: 20px; padding-bottom: 0px;"
     >
       {{ datasPenutup[0].description }}
     </SectionFourteen>

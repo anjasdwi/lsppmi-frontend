@@ -69,4 +69,20 @@ export default {
   top: -60px;
   left: 7px;
 }
+
+@media (max-width: 575.98px) {
+  .sectioneleven__text {
+    padding: 0px 0px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
 </style>

@@ -1,9 +1,9 @@
 <template>
   <LayoutPublic>
-    <SectionFour title="Lorem Ipsum">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    <SectionFour title="Legalitas dan Lisensi">
+      Kami telah memperoleh lisensi dari BNSP melalui SK No. KEP xxx /BNSP /xx
+      /20xx untuk mengembangkan dan melaksanakan Sertifikasi kompetensi kerja
+      industri pasar modal di Indonesia.
     </SectionFour>
     <SectionThree
       image1="https://ticmi.co.id/upload/gallery/2018/launching-sertifikasi-dan-spm-online-ticmi-2018.jpg"

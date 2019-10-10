@@ -280,6 +280,11 @@ img.scale-with-grid,
     width: 50%;
 }
 
+.image_grayscale:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
 iframe {
     max-width: 100%;
 }

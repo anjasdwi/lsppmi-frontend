@@ -81,4 +81,19 @@ export default {
 .sectionten__text a {
   padding: 3px 5px;
 }
+
+@media (max-width: 575.98px) {
+  .sectionten__text {
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
 </style>

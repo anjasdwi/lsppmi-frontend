@@ -1,9 +1,9 @@
 <template>
   <LayoutPublic>
-    <SectionFour title="Lorem Ipsum">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    <SectionFour title="Sejarah Singkat">
+      Didirikan sesuai dengan akte Notaris No. 37 pada tanggal 27 Nopember 2018
+      oleh Notaris Fathiah Helmi dan Keputusan Menteri Hukum dan Hak Azazi
+      Manusia Republik Indonesia No. AHU-0016731.AH.01.04 Tahun 2018.
     </SectionFour>
     <SectionFive
       classProps="header-sejarah"

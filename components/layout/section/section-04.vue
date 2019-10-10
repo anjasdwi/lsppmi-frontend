@@ -79,6 +79,7 @@ export default {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   position: relative;
+  line-height: 1.2;
 }
 .sectionfour__text h2::after {
   background-color: rgb(255, 255, 255);

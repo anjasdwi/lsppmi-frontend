@@ -56,6 +56,7 @@ export default {
 .sectionfourteen__text p {
   margin: 0 0 25px;
   line-height: 30px;
+  text-align: justify;
 }
 .sectionfourteen__text h2 {
   color: rgba(49, 53, 59, 0.96) !important;

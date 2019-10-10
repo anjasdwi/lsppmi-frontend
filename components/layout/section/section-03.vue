@@ -74,6 +74,7 @@ export default {
 .sectionthree__text p {
   margin: 0 0 25px;
   line-height: 30px;
+  text-align: justify;
 }
 .sectionthree__text h2 {
   color: rgba(49, 53, 59, 0.96) !important;
@@ -84,6 +85,7 @@ export default {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   position: relative;
+  line-height: 1.2;
 }
 .sectionthree__text h2::after {
   background-color: rgb(81, 172, 68);
@@ -95,5 +97,28 @@ export default {
   position: absolute;
   transform: translate(-50%, 0);
   width: 127px;
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .sectionthree__image .img--frame1 {
+    margin-left: 0px;
+  }
+  .sectionthree__image .img--frame2 {
+    top: -40px;
+    left: 0px;
+    left: 10%;
+  }
+  .sectionthree__text {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
 }
 </style>

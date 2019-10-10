@@ -11,10 +11,10 @@
           <div class="column mcb-column one-second column_column">
             <div class="column_attr clearfix align_center">
               <h2>Produk dan Layanan</h2>
-              <p>
+              <!-- <p>
                 Nam vel justo cursus, faucibus lorem eget, egestas eros.
                 Maecenas eleifend erat at justo fringilla imperdiet imperdiet
-              </p>
+              </p> -->
             </div>
           </div>
           <div class="column mcb-column one column_divider">

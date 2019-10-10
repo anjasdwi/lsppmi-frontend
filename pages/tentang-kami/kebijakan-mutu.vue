@@ -1,9 +1,8 @@
 <template>
   <LayoutPublic>
-    <SectionFour title="Lorem Ipsum">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    <SectionFour title="Kebijakan Mutu">
+      Kami berkomitmen untuk menerapkan sistem manajemen mutu secara konsisten
+      dan menghasilkan proses Uji Kompetensi sertifikasi yang berkualitas.
     </SectionFour>
     <SectionFive
       classProps="header-kebijakan"
