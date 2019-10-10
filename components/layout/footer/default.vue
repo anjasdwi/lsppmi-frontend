@@ -28,29 +28,11 @@
             class="footer__wrapper__container__column--sertificate section__footer"
           >
             <aside>
-              <h4>Sertifikasi</h4>
+              <h4>Ujian Sertifikasi Kompetensi</h4>
               <ul class="footer_link">
-                <li>
-                  <i class="icon-right-open" /><a href="#">Analisis Efek</a>
-                </li>
-                <li>
-                  <i class="icon-right-open" /><a href="#">Analisis Teknikal</a>
-                </li>
-                <li>
-                  <i class="icon-right-open" /><a href="#">Equity Sales</a>
-                </li>
-                <li>
+                <li v-for="data in links" v-bind:key="data.title">
                   <i class="icon-right-open" />
-                  <a href="#" style="margin-left:-5px;">Investment Banking</a>
-                </li>
-                <li>
-                  <i class="icon-right-open" /><a href="#">Analisis Efek</a>
-                </li>
-                <li>
-                  <i class="icon-right-open" /><a href="#">Analisis Teknikal</a>
-                </li>
-                <li>
-                  <i class="icon-right-open" /><a href="#">Equity Sales</a>
+                  <nuxt-link :to="data.link">{{ data.title }}</nuxt-link>
                 </li>
               </ul>
               <!-- <ul>
@@ -92,7 +74,34 @@ export default {
   name: "FooterDefault",
   data() {
     return {
-      logo: `${process.env.storage}/logo.png`
+      logo: `${process.env.storage}/logo.png`,
+      links: [
+        {
+          title: "Perantara Pedagang Efek Pemasaran Terbatas",
+          link:
+            "/ujian-sertifikasi-kompetensi/prerantara-pedagang-efek-pemasaran-terbatas"
+        },
+        {
+          title: "Penjual Efek Reksa Dana",
+          link: "/ujian-sertifikasi-kompetensi/penjual-efek-reksa-dana"
+        },
+        {
+          title: "Perantara Pedagang Efek Pemasaran",
+          link: "/ujian-sertifikasi-kompetensi/perantara-pedagang-efek-pemasaran"
+        },
+        {
+          title: "Perantara Pedagang Efek",
+          link: "/ujian-sertifikasi-kompetensi/perantara-pedagang-efek"
+        },
+        {
+          title: "Penjamin Emisi Efek",
+          link: "/ujian-sertifikasi-kompetensi/penjamin-emisi-efek"
+        },
+        {
+          title: "Manajer Investasi",
+          link: "/ujian-sertifikasi-kompetensi/manajer-investasi"
+        }
+      ]
     }
   }
 }

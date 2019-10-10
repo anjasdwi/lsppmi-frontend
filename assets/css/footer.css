@@ -90,9 +90,11 @@ a:focus {
 #Footer li {
     margin-bottom: 10px
 }
+
 .icon-right-open {
     color: rgb(190, 53, 40) !important;
 }
+
 .section__footer {
     width: 100%;
     margin-bottom: 25px;
@@ -109,12 +111,13 @@ a:focus {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding-left:0px;
+    padding-left: 0px;
 }
 
 .footer__wrapper__container__column--address {
     float: left;
-    width: 30%;
+    width: 27%;
+    padding-right: 20px;
 }
 
 .footer__wrapper__container__column--address img {
@@ -125,7 +128,7 @@ a:focus {
 .footer__wrapper__container__column--sertificate {
     /* padding-left: 70px; */
     float: left;
-    width: 35%;
+    width: 40%;
 }
 
 .footer__wrapper__container__column--sertificate ul {
@@ -135,7 +138,7 @@ a:focus {
 
 .footer__wrapper__container__column__contact {
     float: left;
-    width: 35%;
+    width: 32%;
 }
 
 .footer__wrapper__container__column__contact p {
@@ -202,7 +205,7 @@ a:focus {
     .footer__wrapper__container__column--sertificate {
         width: 100%;
         min-width: 0px;
-        padding-left:0px;
+        padding-left: 0px;
     }
     .footer__wrapper__container__column__contact {
         width: 100%;
