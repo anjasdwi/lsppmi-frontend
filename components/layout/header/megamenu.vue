@@ -17,7 +17,7 @@
               <div class="megamenu__body__right_submenu">
                 <i class="icon-right-open" />
                 <nuxt-link :to="menu.link">
-                  {{ menu.title }}
+                  <span v-on:click="onMouseLeave">{{ menu.title }}</span>
                 </nuxt-link>
               </div>
             </li>
