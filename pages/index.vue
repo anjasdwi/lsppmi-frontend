@@ -25,7 +25,7 @@
               <BodyPublic class="body--home">
                 <SectionTwo
                   btnName="Selengkapnya"
-                  image="https://ticmi.co.id/upload/gallery/2018/wisuda-periode-1-ticmi-2018.jpg"
+                  image="https://storage.googleapis.com/ticmi_asset/cdn/psp/frontend/assets/images/default/psp_ujian.jpg"
                   link="/tentang-kami/profile"
                   title="Profile LSPPMI"
                 >

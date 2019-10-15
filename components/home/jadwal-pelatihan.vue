@@ -10,7 +10,7 @@
           </div>
           <div class="column mcb-column one-second column_column">
             <div class="column_attr clearfix align_center">
-              <h2>Produk dan Layanan</h2>
+              <h2>Ujian Sertifikasi Kompetensi</h2>
               <!-- <p>
                 Nam vel justo cursus, faucibus lorem eget, egestas eros.
                 Maecenas eleifend erat at justo fringilla imperdiet imperdiet
@@ -98,10 +98,10 @@ export default {
           name: "WMI"
         },
         {
-          description: "Ahli Syariah Pasar Modal",
+          description: "Wakil Perantara Pedagang Efek Pemasaran",
           image:
-            "https://storage.googleapis.com/lsppmi/assets/frontend/product/ASPM.png",
-          name: "ASPM"
+            "https://storage.googleapis.com/lsppmi/assets/frontend/product/WPPEP.png",
+          name: "WPPEP"
         },
         {
           description: "Wakil Penjamin Emisi Efek",
@@ -128,12 +128,18 @@ export default {
   margin: 0 2%;
   padding: 30px 40px;
 }
+.item-product p {
+  height: 70px;
+}
 @media (max-width: 425px) {
   .item-product {
     margin-bottom: 30px;
   }
   .item-line {
     margin-bottom: 0px;
+  }
+  .item-product p {
+    height: auto;
   }
 }
 </style>
